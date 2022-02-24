@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.chess {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.chess tr td {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(248, 220, 168);
+}
+
+.chess tr:first-child td,
+.chess tr:last-child td,
+.chess tr td:first-child,
+.chess tr td:last-child {
+  background-color: #282c34 !important;
+  color: rgb(255, 185, 106);
+  font-size: 18px;
+}
+
+.chess tr:nth-child(even) td:nth-child(odd) {
+  background: rgb(223, 119, 1);
+}
+
+.chess tr:nth-child(odd) td:nth-child(even) {
+  background: rgb(223, 119, 1);
+}
